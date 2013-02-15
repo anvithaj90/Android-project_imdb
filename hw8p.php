@@ -32,7 +32,7 @@ $op = preg_replace('!\s+!','', $testchk);
 	}
 else
 {
-	$xop= '<script type="text/javascript">alert("Please enter the title!");window.location.href="http://cs-server.usc.edu:20212/hw6.html"</script>"';
+	$xop= '<script type="text/javascript">alert("Please enter the title!");window.location.href="http://cs-server.bnm.edu:20212/hw6.html"</script>"';
 }
 	
 	
