@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 	String url_final;
 	TextView t1, mEdit1,t;
 	String returned;
-	  String query,query1;
+	String query,query1;
 	public int publiclen;
 	public String text11;
 	
@@ -74,7 +74,7 @@ public class MainActivity extends Activity {
 						try {
 							query = URLEncoder.encode(text11, "utf-8");
 							query1 = URLEncoder.encode(text22, "utf-8");
-							url_final = "THE URL IS TO BE PUT LATER..."
+							url_final = "http://cs-server.bnm.edu:20212/hw8.html?"+query+"="+query1;
 							
 						} catch (UnsupportedEncodingException e) {
 							// TODO Auto-generated catch block

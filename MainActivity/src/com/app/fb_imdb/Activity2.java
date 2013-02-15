@@ -25,8 +25,8 @@ import com.facebook.android.FacebookError;
 
 public class Activity2 extends Activity {
 
-	ABC s = ABC.getSingletonObject();
-	String[][] full_data = s.getString();
+	ABC previous_data = ABC.getSingletonObject();
+	String[][] full_data = previous_data.getString();
 	
 	public Facebook fb=new Facebook("430731513660173");
 	private ListView listView1;
@@ -61,7 +61,7 @@ public class Activity2 extends Activity {
 
 				  @Override
 				  public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-
+					  /* DISPLAYNG IT INA DIALOG BOX */
 					    Dialog  dialog = new Dialog (Activity2.this);
 		                dialog.setContentView(R.layout.dialogxml);
 		                dialog.setCancelable(true);
@@ -71,7 +71,7 @@ public class Activity2 extends Activity {
 		                TextView ddirector = (TextView) dialog.findViewById(R.id.dtextView3);
 		                TextView drating = (TextView) dialog.findViewById(R.id.dtextView4);
 		                TextView len1 = (TextView) dialog.findViewById(R.id.textView77);
-		               postbutton=(Button) dialog.findViewById(R.id.buttonfb);
+		               postbutton=(Button) dialog.findViewById(R.id.buttonfb); //creating a button inside a dialog box
 		                
 		                
 		                InputStream is;

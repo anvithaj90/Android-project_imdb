@@ -44,7 +44,7 @@ import org.json.JSONTokener;
 	//	 WORKING JUST FINE  EXPECT MARY 
 			String data = URLEncoder.encode("title", "UTF-8") + "=" + URLEncoder.encode(value1, "UTF-8");
         data += "&" + URLEncoder.encode("title_type", "UTF-8") + "=" + URLEncoder.encode(value2, "UTF-8");
-		String url_php="http://cs-server.usc.edu:20212/hw8p.php?"+data;
+		String url_php="http://cs-server.bnm.edu:20212/hw8p.php?"+data;
 
         URL url = new URL(url_php);
         URLConnection conn = url.openConnection();
